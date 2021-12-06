@@ -1,4 +1,4 @@
-Module.register("MMM-HomeAssistant", {
+Module.register("MMM-HomeAssistant-Orange", {
   defaults: {
     host: "",
     port: 8123,
@@ -8,14 +8,8 @@ Module.register("MMM-HomeAssistant", {
   },
 
   getStyles: function() {
-    return ["MMM-HomeAssistant.css"];
+    return ["MMM-HomeAssistant-Orange.css"];
   },
-
-	getTranslations: function() {
-    return {
-      'zh': 'translations/zh.json'
-    };
-	},
 
   start: function() {
     console.log("Starting module: " + this.name);
@@ -265,18 +259,6 @@ Module.register("MMM-HomeAssistant", {
       });
     group.appendChild(input);
     group.appendChild(button);
-    /*
-    /*<div>
-        <div class="group">
-          <div class="text">
-          name
-          </div >
-          <label class="switch" >
-            <input type="checkbox" id="cb"/>
-            <div class="slider round"></div>
-          </label>
-        </div>
-      </div>*/
     return group;
   },
 });
